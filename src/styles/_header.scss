@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+header {
+    height: 10vh;
+    background-color: variaveis.$bgColor;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+
+        img {
+            height: 10vh;
+        }
+
+        nav {
+            width: 50%;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                li {
+                    a {
+                        color: #BF863F;
+                        font-size: 2rem;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
