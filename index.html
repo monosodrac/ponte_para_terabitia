@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +9,71 @@
 <body>
     <header>
         <div class="container">
-            <img src="./src/imgs/bridge-terabithia_title.png" alt="">
+            <a href="#hero">
+                <img src="./src/imgs/bridge-terabithia_title.png" alt="" />
+            </a>
             <nav>
                 <ul>
                     <li>
-                        <a href="">abc</a>
+                        <a href="#info">Enredo</a>
                     </li>
                     <li>
-                        <a href="">abc</a>
+                        <a href="#elenco">Elenco</a>
                     </li>
                     <li>
-                        <a href="">abc</a>
+                        <a href="#trailer">Trailer</a>
                     </li>
                     <li>
-                        <a href="">abc</a>
+                        <a href="#onde-ass">Onde assistir</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <section class="hero" id="hero">
+        <img src="./src/imgs/hq720.jpg" alt="" />
+    </section>
+
+    <section class="enredo" id="info">
+        <div class="container">
+            <h3>Enredo</h3>
+            <div class="enredo__info">
+                <img src="./src/imgs/bridge-to-terabithia.jpg" alt="" />
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, iusto consectetur delectus voluptatibus, reiciendis totam similique, dignissimos quidem at obcaecati sint? Laudantium vel a quo distinctio minus! Libero, nisi veniam.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="elenco">
+        <div class="container">
+            <nav class="elenco__tabs">
+                <button data-tab-button="elenco1" class="elenco__tabs__button elenco__tabs__button--is-active">
+                    <img src="./src/imgs/enr.jpg" alt="" class="img-sel">
+                </button>
+                <button data-tab-button="elenco2" class="elenco__tabs__button">
+                    <img src="./src/imgs/enr.jpg" alt="" class="img-sel">
+                </button>
+            </nav>
+            <ul data-tab-id="elenco1" class="elenco__list elenco__list--is-active">
+                <li class="elenco__list__item">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, iusto consectetur delectus voluptatibus, reiciendis totam similique, dignissimos quidem at obcaecati sint? Laudantium vel a quo distinctio minus! Libero, nisi veniam.</p>
+                </li>
+            </ul>
+            <ul data-tab-id="elenco2" class="elenco__list">
+                <li class="elenco__list__item">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, iusto consectetur delectus voluptatibus, reiciendis totam similique, dignissimos quidem at obcaecati sint? Laudantium vel a quo distinctio minus! Libero, nisi veniam.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="trailer">
+    </section>
+
+    <section class="onde-ass">
+    </section>
+
+    <script src="./src/scripts/main.js"></script>
 </body>
 </html>

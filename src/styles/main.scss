@@ -1,5 +1,8 @@
 @use 'variaveis';
 @use 'header';
+@use 'hero';
+@use 'enredo';
+@use 'elenco';
 
 @font-face {
     font-family: Avenir;
@@ -19,9 +22,18 @@
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
     list-style: none;
+    scroll-behavior: smooth;
 }
 
 .container {
     margin: 0 auto;
     max-width: 1200px;
+}
+
+@mixin title($font-size: 3rem) {
+    font-size: $font-size;
+}
+
+.title {
+    @include title;
 }
