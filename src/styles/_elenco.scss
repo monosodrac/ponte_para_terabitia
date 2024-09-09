@@ -3,6 +3,12 @@
 .elenco {
     margin: 4rem 0;
 
+    h3 {
+        padding-top: 7rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
     &__tabs {
         display: flex;
         justify-content: center;
