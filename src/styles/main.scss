@@ -3,6 +3,8 @@
 @use 'hero';
 @use 'enredo';
 @use 'elenco';
+@use 'trailer';
+@use 'ondeAss';
 
 @font-face {
     font-family: Avenir;
@@ -23,6 +25,11 @@
     font-family: Avenir, sans-serif;
     list-style: none;
     scroll-behavior: smooth;
+    color: #fff;
+}
+
+body {
+    background-color: variaveis.$color5;
 }
 
 .container {

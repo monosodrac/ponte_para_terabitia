@@ -1,0 +1,16 @@
+@use 'variaveis';
+
+.trailer {
+    margin: 4rem 0;
+
+    h3 {
+        text-align: center;
+    }
+
+    &__iframe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+}

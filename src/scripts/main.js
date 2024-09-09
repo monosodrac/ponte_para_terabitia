@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
             aba.classList.add('elenco__list--is-active');
             removeBotaoAtivo();
             botao.target.classList.add('elenco__tabs__button--is-active');
-            console.log(abaAlvo)
         })
     }
 })

@@ -2,9 +2,10 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
 // const uglify = require('gulp-uglify');
+// const obfuscate = require('gulp-obfuscate');
 
 // function scripts() {
-//     return gulp.src('./src/scripts/*.js').pipe(uglify()).pipe(gulp.dest('./dist/js'));
+//     return gulp.src('./src/scripts/*.js').pipe(uglify()).pipe(obfuscate()).pipe(gulp.dest('./dist/js'));
 // }
 
 function styles() {
