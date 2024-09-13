@@ -2,8 +2,10 @@
 
 .onde-ass {
     margin: 4rem 0;
-
+    
     h3 {
+        padding-top: 8rem;
+        margin-bottom: 1.5rem;
         text-align: center;
     }
 
@@ -19,14 +21,20 @@
         text-align: center;
 
         img {
-            height: 7rem;
+            height: 8rem;
+            width: 8rem;
+            border-radius: 10px;
         }
 
-        button {
+        .button {
             padding: 1rem;
             border: 1px solid variaveis.$mainColor;
             border-radius: 50px;
             background-color: variaveis.$bgColor;
+
+            &:hover {
+                background-color: lighten(variaveis.$bgColor, 3%);
+            }
         }
     }
 }

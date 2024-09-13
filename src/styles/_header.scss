@@ -1,10 +1,12 @@
 @use 'variaveis';
 
 header {
-    display: flex;
-    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
     height: 15vh;
     background-color: variaveis.$color5;
+    z-index: 1;
     
     .container {
         display: flex;

@@ -1,7 +1,13 @@
 @use 'variaveis';
 
-.elenco {
+.chars {
     margin: 4rem 0;
+
+    h3 {
+        padding-top: 7rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
 
     &__tabs {
         display: flex;
@@ -25,7 +31,7 @@
             border-radius: 50%;
             
             &--is-active {
-                border-color: #000;
+                border-color: variaveis.$mainColor;
             }
         }
     }
