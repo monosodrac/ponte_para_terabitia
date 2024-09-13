@@ -1,12 +1,12 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const imagemin = require('gulp-imagemin');
-// const uglify = require('gulp-uglify');
-// const obfuscate = require('gulp-obfuscate');
+const uglify = require('gulp-uglify');
+const obfuscate = require('gulp-obfuscate');
 
-// function scripts() {
-//     return gulp.src('./src/scripts/*.js').pipe(uglify()).pipe(obfuscate()).pipe(gulp.dest('./dist/js'));
-// }
+function scripts() {
+    return gulp.src('./src/scripts/*.js').pipe(uglify()).pipe(obfuscate()).pipe(gulp.dest('./dist/js'));
+}
 
 function styles() {
     return gulp.src('./src/styles/*.scss').pipe(sass({outputStyle: 'compressed'})).pipe(gulp.dest('./dist/css'));
@@ -16,9 +16,9 @@ function images() {
     return gulp.src('./src/imgs/**/*').pipe(imagemin()).pipe(gulp.dest('./dist/images'));
 }
 
-exports.default = gulp.parallel(styles, images /*, scripts */);
+exports.default = gulp.parallel(styles, images, scripts);
 
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
-    // gulp.watch('./src/styles/*.scss', gulp.parallel(scripts));
+    gulp.watch('./src/styles/*.scss', gulp.parallel(scripts));
 };
