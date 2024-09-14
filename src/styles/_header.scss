@@ -14,7 +14,7 @@ header {
         width: 100%;
         color: #fff;
 
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
             display: block;
         }
 
@@ -26,15 +26,16 @@ header {
             ul {
                 display: flex;
                 justify-content: space-around;
+                align-items: center;
 
-                @media (max-width: 767px) {
+                @media (max-width: 991px) {
                     display: block;
                 }
 
                 li {
                     margin-left: 1rem;
 
-                    @media (max-width: 767px) {
+                    @media (max-width: 991px) {
                         padding: 1rem;
                     }
 
