@@ -27,6 +27,10 @@
     list-style: none;
     scroll-behavior: smooth;
     color: #fff;
+
+    @media (max-width: 767px) {
+        overflow-x: hidden;
+    }
 }
 
 body {
@@ -35,7 +39,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 90%;
 }
 
 @mixin title($font-size: 3rem) {
