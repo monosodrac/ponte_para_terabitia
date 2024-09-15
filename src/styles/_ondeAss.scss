@@ -32,19 +32,22 @@
         }
 
         p {
+            font-family: sans-serif;
+            
             @media (max-width: 767px) {
                 margin: 1rem 0;
             }
         }
-
+        
         .button {
             padding: 1rem;
             border: 1px solid variaveis.$mainColor;
             border-radius: 50px;
-            background-color: variaveis.$bgColor;
+            background-color: variaveis.$color1;
+            font-family: sans-serif;
 
             &:hover {
-                background-color: lighten(variaveis.$bgColor, 3%);
+                background-color: lighten(variaveis.$color1, 3%);
             }
         }
     }

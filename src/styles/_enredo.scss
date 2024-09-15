@@ -6,7 +6,6 @@
     h3 {
         padding-top: 7rem;
         margin-bottom: 1.5rem;
-        text-align: center;
     }
     
     &__info {
@@ -34,13 +33,6 @@
                 width: 90%;
                 height: 90%;
             }
-        }
-
-        p {
-            color: variaveis.$mainColor;
-            font-size: 1rem;
-            font-weight: bold;
-            text-align: center;
         }
     }
 }

@@ -6,7 +6,6 @@
     h3 {
         padding-top: 7rem;
         margin-bottom: 1.5rem;
-        text-align: center;
     }
 
     ::-webkit-scrollbar {
@@ -50,15 +49,6 @@
 
         &--is-active {
             display: flex;
-        }
-        
-        &__item {
-            p {
-                color: variaveis.$mainColor;
-                font-size: 1rem;
-                font-weight: bold;
-                text-align: center;
-            }
         }
     }
 }

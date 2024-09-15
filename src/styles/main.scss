@@ -8,14 +8,8 @@
 @use 'footer';
 
 @font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Regular.woff2);
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: Avenir;
-    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-family: Ringbearer;
+    src: url(../../assets/fonts/RINGM___.TTF);
     font-weight: 700;
 }
 
@@ -23,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Avenir, sans-serif;
+    font-family: Ringbearer;
     list-style: none;
     scroll-behavior: smooth;
     color: #fff;
@@ -34,7 +28,35 @@
 }
 
 body {
-    background-color: variaveis.$color5;
+    background-color: variaveis.$bgColor;
+}
+
+@mixin text($fontSize: 1rem) {
+    font-size: $fontSize;
+    color: variaveis.$mainColor;
+    text-align: center;
+}
+
+@mixin title($fontSize: 2.5rem) {
+    @include text($fontSize);
+    color: variaveis.$mainColor;
+    text-align: center;
+}
+
+.text {
+    @include text;
+
+    @media (max-width: 767px) {
+        @include text(.8rem);
+    }
+}
+
+.title {
+    @include title;
+
+    @media (max-width: 767px) {
+        @include title(1.5rem);
+    }
 }
 
 .container {
