@@ -33,6 +33,7 @@ body {
 
 @mixin text($fontSize: 1rem) {
     font-size: $fontSize;
+    font-weight: bold;
     color: variaveis.$mainColor;
     text-align: center;
 }
